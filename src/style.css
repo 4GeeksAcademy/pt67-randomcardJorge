@@ -1,1 +1,63 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url(https://img.freepik.com/free-vector/flat-design-poker-table-background_23-2151047002.jpg?w=900&t=st=1716657459~exp=1716658059~hmac=361e1dcc993d0d5d637e93ad5dd1d4ef55cead5296f9d1ac978a76097b56721c);
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  text-align: center;
+  color: #fff;
+}
+
+button {
+  margin: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card .top-left,
+.card .bottom-right {
+  position: relative;
+}
+.card .top-left {
+  top: 10px;
+  font-size: 35px;
+}
+
+.card .bottom-right {
+  bottom: 10px;
+  font-size: 35px;
+  transform: rotate(180deg);
+}
+
+.card .center {
+  font-size: 48px;
+  font-weight: bold;
+}
