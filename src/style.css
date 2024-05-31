@@ -40,19 +40,23 @@ button {
   align-items: center;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: relative;
 }
 
 .card .top-left,
 .card .bottom-right {
-  position: relative;
+  position: absolute;
 }
+
 .card .top-left {
   top: 10px;
+  left: 10px;
   font-size: 35px;
 }
 
 .card .bottom-right {
   bottom: 10px;
+  right: 10px;
   font-size: 35px;
   transform: rotate(180deg);
 }
@@ -60,4 +64,10 @@ button {
 .card .center {
   font-size: 48px;
   font-weight: bold;
+}
+.card .center .numbercenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

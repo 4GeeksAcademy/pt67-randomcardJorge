@@ -1,6 +1,4 @@
-/* eslint-disable */
 import "./style.css";
-
 document
   .getElementById("shuffleBtn")
   .addEventListener("click", generateRandomCard);
@@ -30,7 +28,11 @@ function generateRandomCard() {
   cardContainer.innerHTML = `
         <div class="card">
             <div class="top-left">${randomSuit}</div>
-            <div class="center">${randomValue}</div>
+            <div class="center">
+              <div class="numbercenter">
+                ${randomValue}
+              </div>
+            </div>
             <div class="bottom-right">${randomSuit}</div>
         </div>
     `;
